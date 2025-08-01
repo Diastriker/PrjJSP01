@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+	$( function() {
+		
+	} )
+</script>
+	
+</head>
+<body>
+	<h2>사용자 목록 조회</h2>
+	<a href="userlist.jsp?name=all">전체목록</a> <!-- a tag 도 GET 방식 -->
+	<hr>
+	
+	<!-- GET : 서버로 넘겨줄 정보를 주소줄애 넣어서 전달 : a tag 도 동일한 기능 
+		name에 "나" 를 넣으면 - userlist.jsp?name=나 -->
+	<form action="userlist.jsp" method="GET">
+	이름검색<input type="text" name="q" value="나" /> <!-- 나 -->
+    <input type="submit" value="조회" />
+	</form>	
+	<hr>
+	
+	<h1>회원가입</h1>
+	<form action="adduser.jsp" method="GET">
+	NAME<input type="text" name="name" /><br>
+	USERID<input type="text" name="userid" /><br>
+	PASSWD<input type="text" name="passwd" /><br>
+	EMAIL<input type="text" name="email" /><br>
+	<input type="submit" value="등록" />
+	</form>	
+	<hr>
+	
+	<!--  
+	<h1>회원 삭제</h1>
+	<form action="deluser.jsp">
+	삭제할 회원id:<input type="text" name="userid" />
+	<input type="submit" value="삭제" />
+	</form>
+	<hr>
+	-->
+	
+	<!--  
+	<h1>회원 수정</h1>
+	<form action="updateuser.jsp">
+	수정할 회원 이름 선택:<input type=text name="name" /><br>
+	해당 회원 이메일 수정:<input type=text name="email"/><br>
+	<input type="submit" value="수정"/>
+	</form>
+	-->
+	
+</body>
+</html>
+
+
+
